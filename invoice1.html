@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabcart</title>
+    <style>
+        body{
+            background-color: #F6F6F6; 
+            margin: 0;
+            padding: 0;
+        }
+        h1,h2,h3,h4,h5,h6{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .brand-section{
+           background-color: white;
+           padding: 10px 40px;
+           color: black;
+        }
+        .logo{
+            width: 50%;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-6{
+            width: 50%;
+            flex: 0 0 auto;
+        }
+        .text-white{
+            color:black;
+        }
+        .company-details{
+            float: right;
+            text-align: right;
+        }
+        .body-section{
+            padding: 16px;
+            border: 1px solid gray;
+        }
+        .heading{
+            font-size: 20px;
+            margin-bottom: 08px;
+        }
+        .sub-heading{
+            color: #262626;
+            margin-bottom: 05px;
+        }
+        table{
+            background-color: #fff;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table thead tr{
+            border: 1px solid #111;
+            background-color: black;
+            color: white;
+        }
+        table td {
+            vertical-align: middle !important;
+            text-align: center;
+        }
+        table th, table td {
+            padding-top: 08px;
+            padding-bottom: 08px;
+        }
+        .table-bordered{
+            box-shadow: 0px 0px 5px 0.5px gray;
+        }
+        .table-bordered td, .table-bordered th {
+            border: 1px solid #dee2e6;
+        }
+        .text-right{
+            text-align: end;
+        }
+        .w-20{
+            width: 20%;
+        }
+        .float-right{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="brand-section">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="text-white">Invoice</h1>
+                </div>
+                <div class="col-6">
+                    <div class="company-details">
+                        <p class="text-white">Invoice Number <input type="text"></p>
+                        <p class="text-white">Invoice Date <input type="date"</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body-section">
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="heading">Billing Information</h2>
+                    <p class="sub-heading">Company <br><input type="text"> </p>
+                    <p class="sub-heading">Name <br><input type="text"> </p>
+                    <p class="sub-heading"> Address <br><input type="text">  </p>
+                    <p class="sub-heading"> Email <br><input type="email">  </p>
+
+                </div>
+                <div class="col-6">
+                    <h2 class="heading">Shipping Information</h2>
+                    <p class="sub-heading"> Name <br><input type="text"> </p>
+                    <p class="sub-heading"> Address <br><input type="text">  </p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="body-section">
+            <h3 class="heading">Products</h3>
+            <br>
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th class="w-20">Price</th>
+                        <th class="w-20">Quantity</th>
+                        <th class="w-20">Unit Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text"> </td>
+                        <td><input type="number"></td>
+                        <td><input type="number"</td>
+                        <td><input type="number"</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">Sub Total</td>
+                        <td> <input type="number"</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">Shipping</td>
+                        <td> <input type="number"</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">Tax</td>
+                        <td> <input type="number"</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">Tax Total</td>
+                        <td> <input type="number"</td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+            <br>
+            <h4 class="heading">Additional notes : <input type="text"></h4>
+            
+        </div>
+
+        <div class="body-section">
+            <p>&copy; 
+                Terms & condition
+                <br>  1.  Payment Terms: Specify the payment details, such as the due date, accepted payment methods, and any late payment penalties or discounts for early payments.
+
+                <br> 2. Delivery/Service Terms: Outline the terms of delivery for physical products or the details of the services provided, including any delivery charges or service limitations.
+            
+                <br>  3. Refund/Return Policy: Clearly state the company's policy on refunds and returns, including conditions under which customers are eligible for refunds or returns and any associated fees.
+                <br> 4. Liability Limitations: Define the extent of the company's liability in case of damages or losses related to the product or service, including any disclaimers or limitations of liability.
+            </p>
+        </div>      
+    </div>      
+
+</body>
+</html>
